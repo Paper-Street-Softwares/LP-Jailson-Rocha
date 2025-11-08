@@ -87,8 +87,8 @@ export default function NavbarSocial({ colorMode, mode }) {
     }
     if (colorMode === "dark") {
       return scrolling
-        ? "bg-gradient-to-b from-black to-bgFixedDark shadow-lg border-b-[1px] border-primary transition-all duration-1000"
-        : "bg-gradient-to-b from-black to-bgFixedDark border-b-[1px] border-none transition-colors duration-1000";
+        ? "bg-gradient-to-b from-black to-bgFixedDark shadow-lg border-b-[1px] border-white transition-all duration-1000 "
+        : "bg-gradient-to-b from-black to-bgFixedDark border-b-[1px] border-none transition-colors duration-1000 ";
     }
     // default
     return scrolling
