@@ -28,6 +28,9 @@ export default function AccordionExpandDefault() {
     <div>
       {[1, 2, 3, 4].map((num) => (
         <Accordion
+          sx={{
+            bgcolor: "#262626",
+          }}
           key={`panel${num}`}
           className="mb-[3%]"
           expanded={expanded === `panel${num}`}
@@ -35,12 +38,12 @@ export default function AccordionExpandDefault() {
           style={getPanelStyle(`panel${num}`)}
         >
           <AccordionSummary
-            expandIcon={<ChevronDown size={24} />}
+            expandIcon={<ChevronDown size={24} color="white" />}
             aria-controls={`panel${num}-content`}
             id={`panel${num}-header`}
           >
             <Typography component="div">
-              <h1 className="font-bold font-secondFont text-black">
+              <h1 className="font-bold font-secondFont text-white">
                 {t(`faq.questions.question${num}.question`)}
               </h1>
             </Typography>
@@ -48,7 +51,7 @@ export default function AccordionExpandDefault() {
 
           <AccordionDetails>
             <div
-              className="font-secondFont text-paragraph4 text-paragraphLight"
+              className="font-secondFont text-paragraph4 text-white"
               dangerouslySetInnerHTML={{
                 __html: t(`faq.questions.question${num}.answer`),
               }}
