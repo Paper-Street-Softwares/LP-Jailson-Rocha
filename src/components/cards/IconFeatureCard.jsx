@@ -1,7 +1,26 @@
-export default function IconFeatureCard(props) {
-  const { icon, title, paragraph, className, children, colorMode } = props;
+import Button from "../interactives/Button";
+import { useState } from "react";
+import { Dialog } from "primereact/dialog";
+import { X, MoveRight } from "lucide-react";
 
-  // Definir classes de cor com base no modo
+export default function IconFeatureCard(props) {
+  const {
+    icon,
+    title,
+    paragraph,
+    description,
+    className,
+    children,
+    colorMode,
+  } = props;
+
+  const [visible, setVisible] = useState(false);
+  // const [modalContent, setModalContent] = useState("");
+  // const [modalTitle, setModalTitle] = useState("");
+
+  const onClick = () => {
+    setVisible(true);
+  };
 
   const bgClassesIcon = {
     dark: "bg-buttonColor",
@@ -36,7 +55,25 @@ export default function IconFeatureCard(props) {
       >
         {paragraph}
       </p>
-      {children}
+      <div>
+        <Button label="Saiba mais" onClick={onClick} />
+
+        <Dialog
+          className="font-secondFont"
+          closeIcon={<X size={20} />}
+          header={<span className="text-secondary">{title}</span>}
+          visible={visible}
+          onHide={() => setVisible(false)}
+          style={{ width: "50vw" }}
+          breakpoints={{
+            "4000px": "641px",
+            "1024px": "641px",
+            "641px": "85vw",
+          }}
+        >
+          {description}
+        </Dialog>
+      </div>
     </div>
   );
 }

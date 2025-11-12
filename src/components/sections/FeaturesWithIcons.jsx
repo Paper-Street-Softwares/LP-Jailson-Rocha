@@ -46,6 +46,13 @@ export default function FeaturesWithIcons({ colorMode }) {
                 paragraph={t("features.card1.subtitle")}
                 className={`tablet1:mb-[16px] desktop1:mb-0 desktop2:mb-[46px] ${textClass}`}
                 colorMode={colorMode}
+                description={
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: t("features.card1.description"),
+                    }}
+                  />
+                }
               />
             </MotionDivDownToUp>
             <MotionDivDownToUp>
@@ -55,6 +62,13 @@ export default function FeaturesWithIcons({ colorMode }) {
                 paragraph={t("features.card2.subtitle")}
                 className={textClass}
                 colorMode={colorMode}
+                description={
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: t("features.card2.description"),
+                    }}
+                  />
+                }
               />
             </MotionDivDownToUp>
           </div>
@@ -76,6 +90,13 @@ export default function FeaturesWithIcons({ colorMode }) {
                 paragraph={t("features.card3.subtitle")}
                 className={`tablet1:mb-[16px] desktop1:mb-0 desktop2:mb-[46px] ${textClass}`}
                 colorMode={colorMode}
+                description={
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: t("features.card3.description"),
+                    }}
+                  />
+                }
               />
             </MotionDivDownToUp>
             <MotionDivDownToUp>
@@ -85,6 +106,13 @@ export default function FeaturesWithIcons({ colorMode }) {
                 paragraph={t("features.card4.subtitle")}
                 className={textClass}
                 colorMode={colorMode}
+                description={
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: t("features.card4.description"),
+                    }}
+                  />
+                }
               />
             </MotionDivDownToUp>
           </div>

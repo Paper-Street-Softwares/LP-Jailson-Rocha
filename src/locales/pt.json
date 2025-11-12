@@ -32,28 +32,28 @@
     "card1": {
       "title": "Direito Empresarial",
       "subtitle": "Proteja sua empresa com estratégias jurídicas sólidas.",
-      "description": "A_Definir",
+      "description": "- Holding Patrimonial <br/> Uma holding patrimonial é uma empresa criada para administrar e proteger os bens e ativos de uma pessoa física ou família. Ao transferir bens (como imóveis, investimentos e participações societárias) para a holding, é possível obter vantagens como planejamento sucessório, proteção contra riscos e otimização tributária. <br/><br/> - Recuperação judicial. <br/> A recuperação judicial é um processo legal destinado a auxiliar empresas em crise financeira a se reorganizar e continuar operando, enquanto tratam de suas obrigações com credores. Prevista na Lei 11.101/2005, ela visa garantir a continuidade da atividade econômica, preservando empregos e contribuindo para a estabilidade econômica.",
       "buttonLabelModal": "A_Definir",
       "buttonLabel": "A_Definir"
     },
     "card2": {
       "title": "Direito Trabalhista",
       "subtitle": "Defesa justa e eficaz em questões trabalhistas.",
-      "description": "A_Definir",
+      "description": "- <i>Compliance</i> <br/> <i>Compliance</i> trabalhista é o conjunto de práticas e políticas internas de uma empresa para garantir o cumprimento da legislação trabalhista e das normas regulamentares, evitando riscos legais e danos à reputação. Seu objetivo é promover um ambiente de trabalho ético, justo e seguro, o que inclui desde o registro de funcionários até o respeito à jornada de trabalho, saúde e segurança. A implementação de um programa de <i>compliance</i> trabalhista é fundamental para mitigar passivos financeiros e litígios, melhorar a imagem da empresa e aumentar a produtividade. <br/><br/> - Reconhecimento de vínculo trabalhista <br/> O reconhecimento de vínculo trabalhista é uma declaração, geralmente por via judicial, de que existe uma relação de emprego entre trabalhador e empregador, mesmo que não tenha havido registro formal. Isso acontece quando a relação de trabalho apresenta os requisitos da CLT: pessoalidade, não-eventualidade, subordinação e onerosidade. Após o reconhecimento, o empregador é obrigado a registrar o contrato na Carteira de Trabalho e pagar todos os direitos devidos, como férias, 13º salário e FGTS. <br/><br/> - Rescisão indireta <br/> A rescisão indireta é uma forma de o empregado pedir o fim do contrato de trabalho quando o empregador comete uma falta grave, como atrasar o salário ou não recolher o FGTS. Essa modalidade garante ao trabalhador os mesmos direitos de uma demissão sem justa causa, como o direito ao seguro-desemprego, saque do FGTS com multa de 40%, aviso prévio, 13º proporcional e férias proporcionais. ",
       "buttonLabelModal": "A_Definir",
       "buttonLabel": "A_Definir"
     },
     "card3": {
       "title": "Direito Civil",
       "subtitle": "Resolvendo conflitos civis com ética e precisão.",
-      "description": "A_Definir",
+      "description": "- Inventário <br/> O inventário judicial é um processo legal que levanta os bens, direitos e dívidas de uma pessoa falecida e os divide entre os herdeiros, através da Justiça. Ele é obrigatório em casos de herdeiros menores ou incapazes, testamento, ou quando há discordância entre os herdeiros sobre a partilha.",
       "buttonLabelModal": "A_Definir",
       "buttonLabel": "A_Definir"
     },
     "card4": {
       "title": "Direito de Trânsito",
       "subtitle": "Amparo legal em multas, infrações e suspensões.",
-      "description": "A_Definir",
+      "description": "O Direito de Trânsito é um ramo do direito que regula a circulação de veículos, pessoas e animais nas vias terrestres, baseando-se principalmente no Código de Trânsito Brasileiro (CTB). Ele abrange tanto aspectos administrativos, como multas e suspensão da CNH, quanto penal, tratando de crimes de trânsito. É uma área que dialoga com outros ramos como Direito Administrativo, Civil e Penal, e atua na defesa de motoristas em processos e na garantia da segurança e fluidez do tráfego.",
       "buttonLabelModal": "A_Definir",
       "buttonLabel": "A_Definir",
       "servicesButton": "A_Definir"
