@@ -27,7 +27,7 @@ export default function FeaturesParagraphs({ colorMode }) {
             __html: t(`features.card${cardNum}.description`),
           }}
         />
-      </div>
+      </div>,
     );
 
     setVisible(true);
@@ -59,9 +59,9 @@ export default function FeaturesParagraphs({ colorMode }) {
       />
 
       <SectionWrapper>
-        <div className="flex flex-col tablet1:flex-row justify-center items-center tablet1:items-center w-full gap-6 tablet1:gap-12 desktop1:gap-16">
+        <div className="flex flex-col items-center justify-center w-full gap-6 tablet1:flex-row tablet1:items-center tablet1:gap-12 desktop1:gap-16">
           {/* Coluna esquerda */}
-          <div className="flex-1 flex flex-col gap-6 items-center tablet1:items-center ">
+          <div className="flex flex-col items-center flex-1 gap-6 tablet1:items-center ">
             <MotionDivDownToUp>
               <IconButtonFeatureCard
                 icon={content.texts.features.card1.icon}
@@ -144,7 +144,7 @@ export default function FeaturesParagraphs({ colorMode }) {
           </MotionDivDownToUp>
 
           {/* Coluna direita */}
-          <div className="flex-1 flex flex-col gap-6 items-center tablet1:items-end">
+          <div className="flex flex-col items-center flex-1 gap-6 tablet1:items-end">
             <MotionDivDownToUp>
               <IconButtonFeatureCard
                 icon={content.texts.features.card3.icon}
@@ -229,7 +229,7 @@ export default function FeaturesParagraphs({ colorMode }) {
         className="font-secondFont"
         closeIcon={<X size={20} />}
         header={
-          <div className="w-full border-b border-gray-300 pb-2">
+          <div className="w-full pb-2 border-b border-gray-300">
             <span dangerouslySetInnerHTML={{ __html: modalTitle }} />
           </div>
         }

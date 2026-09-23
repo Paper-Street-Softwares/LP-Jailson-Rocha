@@ -1,62 +1,102 @@
 import Button from "../interactives/Button";
 import { useState } from "react";
 import { Dialog } from "primereact/dialog";
-import { X, MoveRight } from "lucide-react";
+import { X } from "lucide-react";
 
 export default function IconFeatureCard(props) {
-  const {
-    icon,
-    title,
-    paragraph,
-    description,
-    className,
-    children,
-    colorMode,
-  } = props;
+  const { icon, title, paragraph, description, className, colorMode } = props;
 
   const [visible, setVisible] = useState(false);
-  // const [modalContent, setModalContent] = useState("");
-  // const [modalTitle, setModalTitle] = useState("");
 
-  const onClick = () => {
-    setVisible(true);
-  };
-
-  const bgClassesIcon = {
-    dark: "bg-buttonColor",
-    light: "bg-minititle",
-    default: "bg-buttonColor",
-  };
   const textClasses = {
     dark: "text-white",
     light: "text-secondary",
     default: "text-black",
   };
 
-  const bgClass = bgClassesIcon[colorMode] || bgClassesIcon.default;
   const textClass = textClasses[colorMode] || textClasses.default;
 
   return (
     <div
-      className={`w-full tablet1:min-h-[300px] p-0 tablet1:w-[290px] mt-[36px] tablet1:mt-0 desktop1:w-[240px] desktop1:h-[300px] flex flex-col items-center desktop1:hover:scale-110 transition desktop1:p-0  ${className}`}
+      className={`
+        w-full
+        max-w-[290px]
+        min-h-[340px]
+        h-full
+        mt-[36px]
+        tablet1:mt-0
+        flex
+        flex-col
+        items-center
+        text-center
+        transition-transform
+        desktop1:hover:scale-105
+        ${className || ""}
+      `}
     >
+      {/* CAIXA DO ÍCONE */}
+
       <div
-        className={`h-[64px] w-[64px] mb-[24px] rounded-md flex justify-center items-center text-labelButtons ${bgClass}`}
+        className="
+          w-[64px]
+          h-[64px]
+          min-w-[64px]
+          min-h-[64px]
+          shrink-0
+          mb-[24px]
+          rounded-md
+          flex
+          justify-center
+          items-center
+          bg-black
+          text-white
+          [&_svg]:text-white
+          [&_svg]:stroke-white
+        "
       >
         {icon}
       </div>
-      <h1
-        className={`h-auto font-bold font-mainFont text-title3 text-center mb-[16px] ${textClass}`}
+
+      {/* TÍTULO */}
+
+      <h3
+        className={`
+          w-full
+          h-auto
+          desktop1:min-h-[70px]
+          flex
+          items-center
+          justify-center
+          font-bold
+          font-mainFont
+          text-title3
+          text-center
+          mb-[16px]
+          ${textClass}
+        `}
       >
         {title}
-      </h1>
+      </h3>
+
+      {/* DESCRIÇÃO RESUMIDA */}
+
       <p
-        className={`text-center opacity-70 font-secondFont w-[90%] pb-4 ${textClass}`}
+        className={`
+          text-center
+          opacity-70
+          font-secondFont
+          w-[90%]
+          pb-4
+          ${textClass}
+        `}
       >
         {paragraph}
       </p>
-      <div>
-        <Button label="Saiba mais" onClick={onClick} />
+
+      {/* BOTÃO E MODAL */}
+
+      <div className="mt-auto pt-[4px]">
+        <Button label="Saiba mais" onClick={() => setVisible(true)} />
 
         <Dialog
           className="font-secondFont"

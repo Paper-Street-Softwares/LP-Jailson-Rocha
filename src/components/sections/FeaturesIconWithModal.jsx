@@ -36,7 +36,7 @@ export default function FeaturesIconWithModal({ colorMode }) {
         subtitleColorSet={textClass}
       />
       <SectionWrapper>
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid w-full grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <MotionDivDownToUp>
             <IconFeatureCard
               icon={content.texts.features.card1.icon}
